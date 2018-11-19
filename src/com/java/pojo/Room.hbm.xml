@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-11-19 15:53:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.java.pojo.Room" table="room" catalog="hotel">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="typeId" type="string">
+            <column name="typeId" length="32" />
+        </property>
+        <property name="floor" type="java.lang.Integer">
+            <column name="floor" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="1" />
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="updateDate" length="26" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="createDate" length="26" />
+        </property>
+    </class>
+</hibernate-mapping>

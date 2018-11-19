@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-11-19 15:54:28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.java.pojo.Lodginginfo" table="lodginginfo" catalog="hotel">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="entryDate" type="timestamp">
+            <column name="entryDate" length="26" />
+        </property>
+        <property name="leaveDate" type="timestamp">
+            <column name="leaveDate" length="26" />
+        </property>
+        <property name="days" type="java.lang.Integer">
+            <column name="days" />
+        </property>
+        <property name="roomId" type="string">
+            <column name="roomId" length="32" />
+        </property>
+        <property name="deposit" type="java.lang.Integer">
+            <column name="deposit" />
+        </property>
+        <property name="reservationId" type="string">
+            <column name="reservationId" length="32" />
+        </property>
+        <property name="operatorId" type="string">
+            <column name="operatorId" length="32" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="createDate" length="26" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-11-19 15:53:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.java.pojo.Lodger" table="lodger" catalog="hotel">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="lodgingInfoId" type="string">
+            <column name="lodgingInfoId" length="32" />
+        </property>
+        <property name="certificate" type="string">
+            <column name="certificate" length="1" />
+        </property>
+        <property name="certificateNo" type="string">
+            <column name="certificateNo" length="32" />
+        </property>
+        <property name="lodgerName" type="string">
+            <column name="lodgerName" length="32" />
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="1" />
+        </property>
+        <property name="isRegister" type="string">
+            <column name="isRegister" length="1" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="32" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="createDate" length="26" />
+        </property>
+    </class>
+</hibernate-mapping>
